@@ -1,0 +1,156 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    /* padding: 0; */
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0.5rem 0;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.highlight {
+    color: #ffc107;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 0.75rem 0;
+    gap: 15rem;
+}
+
+nav a {
+    color: #f0c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff0;
+}
+
+/* Main Layout */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 60vw;
+
+}
+
+.card2{
+    width: 31vw;
+}
+
+/* Card Title Bar */
+.card h2 {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+/* Content Inside Card */
+.card-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card-content .text {
+    flex: 1;
+}
+
+.card-content img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 6px;
+    max-width: 160px;
+    border-radius: 6px;
+}
+
+/* Location */
+.location {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.location img {
+    max-width: 100px;
+}
+
+/* Web Dev Resources List */
+.resources {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.resources li {
+    margin-bottom: 0.5rem;
+}
+
+.resources a {
+    color: #004080;
+    text-decoration: underline;
+}
+
+.resources a:hover {
+    color: #ff6600;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    color: #00cc66;
+}

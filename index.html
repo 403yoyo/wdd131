@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Etiuzale ThankGod Ikpemhinoghena | A brief bio about a great man, Ikpemhinoghena, also known as 403yoyo">
+    <meta name="author" content="Etiuzale ThankGod Ikpemhinoghena">
+    <title>WDD 131 - Dynamic Web Fundamentals - Etiuzale ThankGod Ikpemhinoghena</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Hey!</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Etiuzale Ikpemhinoghena</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-cor/10?lang=eng&id=p13#p13">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <div class="text">
+                    <p>My name is Etiuzale Ikpemhinoghena. I am 18 years old and I love reading books about Psychology and Computer Science. I currently live in Benin City, Nigeria.</p>
+                    <div class="location">
+                        <figure>
+                            <img src="images/flag.png" alt="Official Flag of Nigeria">
+                            <figcaption style="font-style: italic; font-size: 11px;">Official Flag of Nigeria</figcaption>
+                        </figure>
+                        <div>
+                            <h3>Nigeria</h3>
+                            <p>
+                                Nigeria is the most populous country in Africa and is located in West Africa, bordering the Atlantic Ocean.
+                                It is rich in cultural diversity with over 250 ethnic groups and more than 500 languages.
+                                Nigeria is known for its delicious cuisine, vibrant music, and Nollywood film industry.
+                                The country is also a major producer of oil and natural gas and is home to a variety of wildlife, national parks, and landmarks like Zuma Rock and the Niger River.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/profile.avif" alt="Photo of Etiuzale">
+            </div>
+        </section>
+        
+    
+        <section class="card card2">
+            <h2>Web Dev Resources</h2>
+            <ul class="resources">
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web docs</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://imagecompressor.com/">Optimizilla</a></li>
+            </ul>
+        </section>
+    </main>    
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> • Etiuzale Ikpemhinoghena • Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
