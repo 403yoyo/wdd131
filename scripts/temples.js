@@ -6,7 +6,6 @@ menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('open');
 });
 
-// Footer year and last modified date
 const yearSpan = document.querySelector('#year');
 const lastModifiedSpan = document.querySelector('#lastModified');
 
