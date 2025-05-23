@@ -1,8 +1,6 @@
-/* General Styling */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    /* padding: 0; */
     background-color: #f5f5f5;
     color: #333;
 }
@@ -13,7 +11,6 @@ h1, h2, h3 {
     margin: 0.5rem 0;
 }
 
-/* Header */
 header {
     background-color: #003366;
     color: white;
@@ -26,7 +23,7 @@ header {
     color: #ffc107;
 }
 
-/* Navigation */
+
 nav {
     display: flex;
     justify-content: center;
@@ -46,7 +43,6 @@ nav a:hover {
     color: #ff0;
 }
 
-/* Main Layout */
 main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -56,7 +52,6 @@ main {
     padding: 0 1rem;
 }
 
-/* Card Styling */
 .card {
     background-color: white;
     border: 1px solid #ccc;
@@ -71,7 +66,6 @@ main {
     width: 31vw;
 }
 
-/* Card Title Bar */
 .card h2 {
     background-color: #004080;
     color: white;
@@ -80,7 +74,6 @@ main {
     font-size: 1.3rem;
 }
 
-/* Content Inside Card */
 .card-content {
     display: flex;
     gap: 1rem;
@@ -106,7 +99,6 @@ main {
     border-radius: 6px;
 }
 
-/* Location */
 .location {
     display: flex;
     gap: 1rem;
@@ -118,7 +110,6 @@ main {
     max-width: 100px;
 }
 
-/* Web Dev Resources List */
 .resources {
     list-style-type: none;
     padding: 1rem;
@@ -138,7 +129,6 @@ main {
     color: #ff6600;
 }
 
-/* Footer */
 footer {
     background-color: #003366;
     color: white;
