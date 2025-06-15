@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         vegList.forEach(veg => {
             const vegElement = document.createElement('div');
-            vegElement.className = 'fruit-item'; // You can change this to 'veg-item' if you want to style them separately
+            vegElement.className = 'fruit-item';
             vegElement.innerHTML = `
                 <img src="${veg.image}" alt="${veg.name}" loading="lazy">
                 <div class="fruit-info">
@@ -170,7 +170,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const vegId = parseInt(this.getAttribute('data-id'));
         const selected = vegetables.find(v => v.id === vegId);
         
-        // Format nutrients for better display
         const formattedNutrients = Object.entries(selected.nutrients)
             .map(([key, value]) => `• ${key}: ${value}`)
             .join('\n');

@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         this.querySelector('i').classList.toggle('fa-times');
     });
     
-    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
                 
-                // Close mobile menu if open
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
                     hamburger.querySelector('i').classList.remove('fa-times');
@@ -85,19 +83,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Add animation classes when elements come into view
-    const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.featured-section, .newsletter');
+    // const animateOnScroll = function() {
+    //     const elements = document.querySelectorAll('.featured-section, .newsletter');
         
-        elements.forEach(element => {
-            const elementPosition = element.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.2;
+    //     elements.forEach(element => {
+    //         const elementPosition = element.getBoundingClientRect().top;
+    //         const screenPosition = window.innerHeight / 1.2;
             
-            if (elementPosition < screenPosition) {
-                element.classList.add('fade-in');
-            }
-        });
-    };
+    //         if (elementPosition < screenPosition) {
+    //             element.classList.add('fade-in');
+    //         }
+    //     });
+    // };
     
-    window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Run once on load
+    // window.addEventListener('scroll', animateOnScroll);
+    // animateOnScroll(); // Run once on load
 });

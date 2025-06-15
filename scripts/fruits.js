@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('fruit-search');
     const benefitFilter = document.getElementById('benefit-filter');
     
-    // Fruit data - in a real app, this might come from an API
     const fruits = [
         {
             id: 1,
@@ -20,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             season: "Fall",
             sources: "Local orchards, supermarkets"
         },
-        // More fruits would be added here...
+
         {
             id: 2,
             name: "Banana",
@@ -128,10 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
     
-    // Display all fruits initially
     displayFruits(fruits);
     
-    // Search functionality
     searchInput.addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();
         const filteredFruits = fruits.filter(fruit => 
@@ -141,7 +138,6 @@ document.addEventListener('DOMContentLoaded', function() {
         displayFruits(filteredFruits);
     });
     
-    // Filter by benefit
     benefitFilter.addEventListener('change', function() {
         const selectedBenefit = this.value;
         if (!selectedBenefit) {
@@ -156,7 +152,6 @@ document.addEventListener('DOMContentLoaded', function() {
         displayFruits(filteredFruits);
     });
     
-    // Display fruits in the grid
     function displayFruits(fruitsToDisplay) {
         fruitContainer.innerHTML = '';
         
@@ -187,7 +182,6 @@ document.addEventListener('DOMContentLoaded', function() {
             fruitContainer.appendChild(fruitElement);
         });
         
-        // Add event listeners to detail buttons
         document.querySelectorAll('.view-details').forEach(button => {
             button.addEventListener('click', function() {
                 const fruitId = parseInt(this.getAttribute('data-id'));
@@ -197,9 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Show detailed view of a fruit (could be a modal in a real implementation)
     function showFruitDetails(fruit) {
-    // Format nutrients for clean display
     const formattedNutrients = Object.entries(fruit.nutrients)
         .map(([nutrient, value]) => `• ${nutrient}: ${value}`)
         .join('\n');

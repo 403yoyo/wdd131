@@ -159,13 +159,13 @@ nav {
 }
 
 
-.prev {
+/* .prev {
     left: 10px;
 }
 
 .next {
     right: 10px;
-}
+} */
 
 .fruit-card {
     min-width: 250px;
@@ -489,7 +489,7 @@ footer {
 }
 
 
-.benefits {
+/* .benefits {
     margin-top: 1rem;
 }
 
@@ -502,7 +502,7 @@ footer {
     font-size: 0.8rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
-}
+} */
 
 @media (max-width: 768px) {
     .nav-links {
@@ -595,7 +595,7 @@ footer {
 
 .about-grid .mission, .about-grid .story {
   flex: 1 1 45%;
-  background-color: #f9f9f9;
+  background-color: var(--light-color);
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -616,7 +616,8 @@ footer {
 
 .team-card {
   width: 250px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: var(--light-color);
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
