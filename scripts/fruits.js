@@ -199,9 +199,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Show detailed view of a fruit (could be a modal in a real implementation)
     function showFruitDetails(fruit) {
-        // In a full implementation, this would open a modal or new page
-        alert(`Detailed view for ${fruit.name}\n\nBenefits: ${fruit.benefits.join(', ')}\n\nNutrients:\nCalories: ${fruit.nutrients.calories}\nCarbs: ${fruit.nutrients.carbs}\nFiber: ${fruit.nutrients.fiber}`);
-    }
+    // Format nutrients for clean display
+    const formattedNutrients = Object.entries(fruit.nutrients)
+        .map(([nutrient, value]) => `• ${nutrient}: ${value}`)
+        .join('\n');
+    
+    alert(`Detailed view for ${fruit.name}\n\n` +
+          `Benefits: ${fruit.benefits.join(', ')}\n\n` +
+          `Nutrients:\n${formattedNutrients}`);
+}
     
 
 });

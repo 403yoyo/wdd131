@@ -165,12 +165,20 @@ document.addEventListener('DOMContentLoaded', function () {
             vegContainer.appendChild(vegElement);
         });
 
-        document.querySelectorAll('.view-details').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const vegId = parseInt(this.getAttribute('data-id'));
-                const selected = vegetables.find(v => v.id === vegId);
-                alert(`Detailed view for ${selected.name}\n\nBenefits: ${selected.benefits.join(', ')}\n\nNutrients: ${JSON.stringify(selected.nutrients, null, 2)}`);
-            });
-        });
+     document.querySelectorAll('.view-details').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const vegId = parseInt(this.getAttribute('data-id'));
+        const selected = vegetables.find(v => v.id === vegId);
+        
+        // Format nutrients for better display
+        const formattedNutrients = Object.entries(selected.nutrients)
+            .map(([key, value]) => `• ${key}: ${value}`)
+            .join('\n');
+        
+        alert(`Detailed view for ${selected.name}\n\n` +
+              `Benefits: ${selected.benefits.join(', ')}\n\n` +
+              `Nutrients:\n${formattedNutrients}`);
+    });
+});
     }
 });
