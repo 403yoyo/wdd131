@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 vitaminA: "56% DV"
             },
             season: "Spring",
-            sources: "Local farms, supermarkets"
         },
         {
             id: 2,
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 fiber: "2.8g"
             },
             season: "Fall",
-            sources: "Local farms, supermarkets"
         },
         {
             id: 3,
@@ -44,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 calcium: "4% DV"
             },
             season: "Fall",
-            sources: "Supermarkets, gardens"
         },
         {
             id: 4,
@@ -58,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 potassium: "5% DV"
             },
             season: "Summer",
-            sources: "Gardens, farmers’ markets"
         },
         {
             id: 5,
@@ -72,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 vitaminK: "16% DV"
             },
             season: "Summer",
-            sources: "Local farms, supermarkets"
         },
         {
             id: 6,
@@ -86,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 vitaminA: "283% DV"
             },
             season: "Fall",
-            sources: "Supermarkets, farms"
         },
         {
             id: 7,
@@ -100,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 vitaminA: "206% DV"
             },
             season: "Winter",
-            sources: "Local markets, farms"
         },
         {
             id: 8,
@@ -114,7 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 fiber: "2.1g"
             },
             season: "Summer",
-            sources: "Local farms, supermarkets"
         }
     ];
 

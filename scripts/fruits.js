@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 vitaminC: "8% DV"
             },
             season: "Fall",
-            sources: "Local orchards, supermarkets"
         },
 
         {
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 potassium: "12% DV"
             },
             season: "Year-round",
-            sources: "Supermarkets, tropical regions"
         },
         {
             id: 3,
@@ -48,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 vitaminC: "88% DV"
             },
             season: "Winter",
-            sources: "Florida, California, supermarkets"
         },
         
         {
@@ -64,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 vitaminK: "24% DV"
             },
             season: "Summer",
-            sources: "Local farms, supermarkets"
         },
         {
             id: 5,
@@ -79,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 vitaminC: "98% DV"
             },
             season: "Spring",
-            sources: "Local farms, supermarkets"
         },
         {
             id: 6,
@@ -94,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 vitaminA: "15% DV"
             },
             season: "Summer",
-            sources: "Tropical regions, supermarkets"
         },
         {
             id: 7,
@@ -109,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 manganese: "76% DV"
             },
             season: "Year-round",
-            sources: "Tropical regions, supermarkets"
         },
         {
             id: 8,
@@ -124,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 potassium: "14% DV"
             },
             season: "Year-round",
-            sources: "California, Mexico, supermarkets"
         }
     ];
     
