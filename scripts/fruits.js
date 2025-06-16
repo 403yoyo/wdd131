@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             season: "Winter",
             sources: "Florida, California, supermarkets"
         },
+        
         {
             id: 4,
             name: "Blueberry",
