@@ -78,21 +78,4 @@ document.addEventListener('DOMContentLoaded', function() {
             imageObserver.observe(img);
         });
     }
-    
-
-    // const animateOnScroll = function() {
-    //     const elements = document.querySelectorAll('.featured-section, .newsletter');
-        
-    //     elements.forEach(element => {
-    //         const elementPosition = element.getBoundingClientRect().top;
-    //         const screenPosition = window.innerHeight / 1.2;
-            
-    //         if (elementPosition < screenPosition) {
-    //             element.classList.add('fade-in');
-    //         }
-    //     });
-    // };
-    
-    // window.addEventListener('scroll', animateOnScroll);
-    // animateOnScroll(); // Run once on load
 });
