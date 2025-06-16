@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 4,
             name: "Blueberry",
-            image: "images/Blueberry.jpg",
+            image: "images/blueberry.jpg",
             description: "Blueberries are antioxidant powerhouses. They support brain health and reduce inflammation.",
             benefits: ["Brain Health", "Antioxidants", "Heart Health"],
             nutrients: {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 5,
             name: "Strawberry",
-            image: "images/Strawberry.jpg",
+            image: "images/strawberry.jpg",
             description: "Strawberries are rich in Vitamin C and manganese. Good for skin and blood sugar control.",
             benefits: ["Skin Health", "Blood Sugar", "Immunity"],
             nutrients: {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 7,
             name: "Pineapple",
-            image: "images/Pineapple.jpg",
+            image: "images/pineapple.jpg",
             description: "Pineapples contain bromelain enzyme. They aid digestion and reduce inflammation.",
             benefits: ["Digestion", "Anti-inflammatory", "Immunity"],
             nutrients: {

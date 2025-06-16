@@ -6,7 +6,10 @@
     --light-color: #ECF0F1;
     --text-color: #333;
     --text-light: #777;
+    --white: #fff;
+    
 }
+
 
 * {
     margin: 0;
@@ -18,7 +21,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #f9f9f9; /* come back ooo*/
+    /* background-color: #f9f9f9; */
 }
 
 h1, h2, h3, h4 {
@@ -31,6 +34,7 @@ a {
     text-decoration: none;
     color: var(--primary-color);
 }
+
 
 header {
     background-color: var(--secondary-color);
@@ -87,7 +91,6 @@ nav {
 }
 
 .hero {
-    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-img.jpg'); */
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/hero-img.jpg');
     background-size: cover;
     background-position: center;
@@ -96,7 +99,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: var(--white);
     padding: 0 2rem;
 }
 
@@ -113,7 +116,7 @@ nav {
 .cta-button {
     display: inline-block;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
     padding: 0.8rem 1.5rem;
     border-radius: 50px;
     font-weight: bold;
@@ -121,7 +124,7 @@ nav {
 }
 
 .cta-button:hover {
-    background-color: #3e8e41;
+    background-color: var(--secondary-color);
     transform: translateY(-3px);
 }
 
@@ -139,7 +142,7 @@ nav {
 }
 
 .category-card {
-    background: white;
+    background: var(--white);
     border-radius: 10px;
     padding: 2rem;
     width: 300px;
@@ -169,7 +172,7 @@ nav {
 
 .fruit-card {
     min-width: 250px;
-    background: white;
+    background: var(--white);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -200,7 +203,7 @@ nav {
     padding: 4rem 2rem;
     text-align: center;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
 }
 
 #newsletter-form {
@@ -220,7 +223,7 @@ nav {
 #newsletter-form button {
     padding: 0.8rem 1.5rem;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--light-color);
     border: none;
     border-radius: 0 50px 50px 0;
     cursor: pointer;
@@ -233,7 +236,7 @@ nav {
 
 footer {
     background-color: var(--dark-color);
-    color: white;
+    color: var(--white);
     padding: 3rem 2rem 1rem;
 }
 
@@ -251,7 +254,7 @@ footer {
 }
 
 .footer-section h3 {
-    color: white;
+    color: var(--white);
     margin-bottom: 1.5rem;
     position: relative;
 }
@@ -275,7 +278,7 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #ddd;
+    color: var(--light-color);
     transition: color 0.3s;
 }
 
@@ -289,7 +292,7 @@ footer {
 }
 
 .social-icons a {
-    color: white;
+    color: var(--white);
     font-size: 1.2rem;
     transition: color 0.3s;
 }
@@ -316,7 +319,7 @@ footer {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 2rem;
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -335,7 +338,7 @@ footer {
 .search-container button {
     padding: 0.8rem 1rem;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
     border: none;
     border-radius: 0 50px 50px 0;
     cursor: pointer;
@@ -358,7 +361,7 @@ footer {
 }
 
 .fruit-item {
-    background: white;
+    background: var(--white);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -382,7 +385,7 @@ footer {
     font-size: 0.95rem;
     font-weight: 500;
     background-color: var(--primary-color);
-    color: var(--text-on-primary, #fff);
+    color: var(--white);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -391,7 +394,7 @@ footer {
 }
 
 .fruit-item .view-details:hover {
-    background-color: var(--primary-color-hover, #4CAF50);
+    background-color: var(--primary-color);
     transform: scale(1.05);
 
 }
@@ -427,7 +430,7 @@ footer {
     font-size: 0.95rem;
     font-weight: 500;
     background-color: var(--secondary-color);
-    color: var(--text-on-primary, #fff);
+    color: var(--primary-color);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -456,7 +459,7 @@ footer {
     font-size: 0.95rem;
     font-weight: 500;
     background-color: var(--primary-color);
-    color: var(--text-on-primary, #fff);
+    color: var(--white);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -465,20 +468,20 @@ footer {
 }
 
 .fruit-item .learn-more:hover {
-    background-color: var(--secondary-color-hover, #FFA500);
+    background-color: var(--secondary-color);
     transform: scale(1.05);
 }
 
 
 .fruit-buttons .view-details {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white);
 }
 
 
 .fruit-buttons .learn-more {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -489,7 +492,7 @@ footer {
 }
 
 
-/* .benefits {
+.benefits {
     margin-top: 1rem;
 }
 
@@ -502,7 +505,7 @@ footer {
     font-size: 0.8rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
-} */
+}
 
 @media (max-width: 768px) {
     .nav-links {
@@ -511,7 +514,7 @@ footer {
         top: 80px;
         left: 0;
         right: 0;
-        background-color: white;
+        background-color: var(--white);
         flex-direction: column;
         align-items: center;
         padding: 1rem 0;
@@ -540,6 +543,8 @@ footer {
     }
 }
 
+
+
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -548,7 +553,7 @@ footer {
 }
 
 .veg-card {
-  background: #fff;
+  background: var(--white);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -576,7 +581,7 @@ footer {
 
 .veg-card p {
   font-size: 0.9rem;
-  color: #444;
+  color: var(--dark-color);
 }
 
 
@@ -616,8 +621,7 @@ footer {
 
 .team-card {
   width: 250px;
-  /* background-color: #ffffff; */
-  background-color: var(--light-color);
+  background-color: var(--white);
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -637,7 +641,7 @@ footer {
 
 .get-involved {
   padding: 2rem;
-  background-color: #f1fdf4;
+  background-color: var(--light-color);
   text-align: center;
   padding: 3rem 2rem;
   border-radius: 1rem;
@@ -656,11 +660,13 @@ footer {
 
 .involve-box {
   flex: 1 1 250px;
-  background: #ffffff;
+  background: var(--white);
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+
+
 
 
 .get-involved h2 {
@@ -678,14 +684,14 @@ footer {
 .involve-form textarea {
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--light-color);
   border-radius: 0.5rem;
 }
 
 .involve-form button {
   padding: 0.75rem;
-  background: #4CAF50;
-  color: white;
+  background: var(--primary-color);
+  color: var(--white);
   font-size: 1rem;
   border: none;
   border-radius: 0.5rem;
@@ -694,5 +700,5 @@ footer {
 }
 
 .involve-form button:hover {
-  background: #45a049;
+  background: var(--secondary-color);
 }

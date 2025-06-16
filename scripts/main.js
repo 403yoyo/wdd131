@@ -1,6 +1,5 @@
-// DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
+
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Newsletter form submission
     const newsletterForm = document.getElementById('newsletter-form');
     if (newsletterForm) {
         newsletterForm.addEventListener('submit', function(e) {
@@ -39,22 +37,21 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = emailInput.value.trim();
             
             if (email) {
-                // Save to localStorage
+
                 let subscriptions = JSON.parse(localStorage.getItem('newsletterSubscriptions')) || [];
                 if (!subscriptions.includes(email)) {
                     subscriptions.push(email);
                     localStorage.setItem('newsletterSubscriptions', JSON.stringify(subscriptions));
                 }
                 
-                // Show success message
+
                 const messageElement = document.getElementById('subscription-message');
                 messageElement.textContent = 'Thank you for subscribing!';
-                messageElement.style.color = 'var(--primary-color)';
+                messageElement.style.color = 'var(--secondary-color)';
                 
-                // Reset form
+
                 emailInput.value = '';
                 
-                // Hide message after 5 seconds
                 setTimeout(() => {
                     messageElement.textContent = '';
                 }, 5000);
@@ -62,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Lazy loading images
+
     if ('IntersectionObserver' in window) {
         const lazyImages = document.querySelectorAll('img[loading="lazy"]');
         
@@ -82,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Add animation classes when elements come into view
+
     // const animateOnScroll = function() {
     //     const elements = document.querySelectorAll('.featured-section, .newsletter');
         

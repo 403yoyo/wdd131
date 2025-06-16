@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const recipeEl = document.createElement('a');
             recipeEl.className = 'veg-card';
             recipeEl.href = recipe.recipeLink;
-            recipeEl.target = '_blank'; // opens in new tab
+            recipeEl.target = '_blank';
             recipeEl.innerHTML = `
                 <img src="${recipe.image}" alt="${recipe.title}" loading="lazy">
                 <h3>${recipe.title}</h3>
